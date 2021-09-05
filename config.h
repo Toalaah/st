@@ -197,7 +197,9 @@ ResourcePref resources[] = {
 		{ "color15",      STRING,  &colorname[15] },
 		{ "background",   STRING,  &colorname[256] },
 		{ "foreground",   STRING,  &colorname[257] },
-		{ "cursorColor",  STRING,  &colorname[258] },
+    /* this entry specifies the cursor color. I have changed it to use the same color as 
+     * the foreground as this plays more nicely with how I currently generate my colorschemes. */
+		{ "foreground",   STRING,  &colorname[258] },
 		{ "termname",     STRING,  &termname },
 		{ "shell",        STRING,  &shell },
 		{ "minlatency",   INTEGER, &minlatency },
