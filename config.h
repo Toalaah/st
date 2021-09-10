@@ -9,7 +9,7 @@
 // static char *font = "Ubuntu Mono Nerd Font:size=8";
 // static char *font = "Inconsolata Nerd Font:size=8";
 static char *font = "Fira Code Nerd Font:pixelsize=18:antialias=true:autohint=true";
-static int borderpx = 2;
+static int borderpx = 8;
 
 /*
  * What program is execed by st depends of these precedence rules:
