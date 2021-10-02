@@ -8,7 +8,7 @@
 // static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
 // static char *font = "Ubuntu Mono Nerd Font:size=8";
 // static char *font = "Inconsolata Nerd Font:size=8";
-static char *font = "Fira Code Nerd Font:pixelsize=18:antialias=true:autohint=true";
+static char *font = "Jet Brains Mono Nerd Font:pixelsize=18:antialias=true:autohint=true";
 static int borderpx = 8;
 
 /*
