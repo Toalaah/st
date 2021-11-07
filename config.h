@@ -9,6 +9,7 @@
 // static char *font = "Ubuntu Mono Nerd Font:size=8";
 // static char *font = "Inconsolata Nerd Font:size=8";
 static char *font = "Jet Brains Mono Nerd Font:pixelsize=18:antialias=true:autohint=true";
+static char *font2[] = { "JoyPixels:pixelsize=10:antialias=true:autohint=true" };
 static int borderpx = 8;
 
 /*
