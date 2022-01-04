@@ -1,15 +1,11 @@
 /* See LICENSE file for copyright and license details. */
 
-/*
- * appearance
- *
- * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
- */
-// static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
-// static char *font = "Ubuntu Mono Nerd Font:size=8";
-// static char *font = "Inconsolata Nerd Font:size=8";
 static char *font = "Jet Brains Mono Nerd Font:pixelsize=18:antialias=true:autohint=true";
-static char *font2[] = { "JoyPixels:pixelsize=10:antialias=true:autohint=true" };
+static char *font2[] = {
+  "Hack Nerd Font:pixelsize=18:antialias=true:autohint=true",
+  "JoyPixels:pixelsize=15:antialias=true:autohint=true",
+  "Symbola:pixelsize=15:antialias=true:autohint=true"
+};
 static int borderpx = 8;
 
 /*
@@ -198,7 +194,7 @@ ResourcePref resources[] = {
 		{ "color15",      STRING,  &colorname[15] },
 		{ "background",   STRING,  &colorname[256] },
 		{ "foreground",   STRING,  &colorname[257] },
-    /* this entry specifies the cursor color. I have changed it to use the same color as 
+    /* this entry specifies the cursor color. I have changed it to use the same color as
      * the foreground as this plays more nicely with how I currently generate my colorschemes. */
 		{ "foreground",   STRING,  &colorname[258] },
 		{ "termname",     STRING,  &termname },
