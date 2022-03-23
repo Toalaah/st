@@ -3,8 +3,8 @@
 static char *font = "Jet Brains Mono Nerd Font:pixelsize=18:antialias=true:autohint=true";
 static char *font2[] = {
   "Hack Nerd Font:pixelsize=18:antialias=true:autohint=true",
+  "Symbola:pixelsize=15:antialias=true:autohint=true",
   "JoyPixels:pixelsize=15:antialias=true:autohint=true",
-  "Symbola:pixelsize=15:antialias=true:autohint=true"
 };
 static int borderpx = 8;
 
@@ -216,7 +216,7 @@ ResourcePref resources[] = {
  */
 static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument       release */
-	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
+	{ XK_ANY_MOD,           Button2, clippaste,      {.i = 0},      1 },
 	{ ShiftMask,            Button4, ttysend,        {.s = "\033[5;2~"} },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
 	{ ShiftMask,            Button5, ttysend,        {.s = "\033[6;2~"} },
