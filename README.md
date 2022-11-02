@@ -11,8 +11,14 @@ fork. The original repo can be found <a href="https://git.suckless.org/st">here<
 
 ## Installation
 
-1. Make sure you have the required Xlib headers installed. Then, simply clone
-   the repository and run the following make command:
+1. Make sure you have the required Xlib headers installed (note that package
+   names may vary slightly per package manager, the names below are given for
+   apt)
+    - `build-essential`
+    - `libx11-dev`
+    - `libxft`
+
+1. To build, simply clone the repository and run the following make commands:
 
    ```bash
    git clone git@github.com:Toalaah/st.git
