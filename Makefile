@@ -7,7 +7,7 @@ INCS  = -I/usr/X11R6/include
 INCS += `pkg-config --cflags fontconfig`
 INCS += `pkg-config --cflags freetype2`
 
-LIBS  = -L/usr/X11R6/lib -lm -lrt -lX11 -lutil -lXft
+LIBS  = -L/usr/X11R6/lib -lm -lrt -lX11 -lutil -lXft -lXrender
 LIBS += `pkg-config --libs fontconfig`
 LIBS += `pkg-config --libs freetype2`
 

@@ -33,6 +33,7 @@ fork. The original repo can be found <a href="https://git.suckless.org/st">here<
 
 ### Applied Patches:
 
+- [alpha](https://st.suckless.org/patches/alpha/)
 - [clipboard](https://st.suckless.org/patches/clipboard/)
 
 ## License

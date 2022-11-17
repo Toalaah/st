@@ -22,6 +22,8 @@ char *utmp = NULL;
 char *scroll = NULL;
 char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 
+float alpha = 0.95;
+
 /* identification sequence returned in DA and DECID */
 char *vtiden = "\033[?6c";
 
