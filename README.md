@@ -35,6 +35,7 @@ fork. The original repo can be found <a href="https://git.suckless.org/st">here<
 
 - [alpha](https://st.suckless.org/patches/alpha/)
 - [clipboard](https://st.suckless.org/patches/clipboard/)
+- [scrollback](https://st.suckless.org/patches/scrollback/)
 
 ## License
 
