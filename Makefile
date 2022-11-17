@@ -23,7 +23,7 @@ LDFLAGS  = ${LIBS}
 
 .POSIX:
 
-SRC = src/st.c src/x.c
+SRC = src/st.c src/x.c src/boxdraw.c
 OBJ = ${SRC:.c=.o}
 
 all: st

@@ -34,6 +34,7 @@ fork. The original repo can be found <a href="https://git.suckless.org/st">here<
 ### Applied Patches:
 
 - [alpha](https://st.suckless.org/patches/alpha/)
+- [boxdraw](https://st.suckless.org/patches/boxdraw/)
 - [clipboard](https://st.suckless.org/patches/clipboard/)
 - [scrollback](https://st.suckless.org/patches/scrollback/)
 
