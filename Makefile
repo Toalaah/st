@@ -6,10 +6,12 @@ PREFIX = /usr/local
 INCS  = -I/usr/X11R6/include
 INCS += `pkg-config --cflags fontconfig`
 INCS += `pkg-config --cflags freetype2`
+INCS += `pkg-config --cflags harfbuzz`
 
 LIBS  = -L/usr/X11R6/lib -lm -lrt -lX11 -lutil -lXft -lXrender
 LIBS += `pkg-config --libs fontconfig`
 LIBS += `pkg-config --libs freetype2`
+LIBS += `pkg-config --libs harfbuzz`
 
 CC = gcc
 
@@ -23,8 +25,11 @@ LDFLAGS  = ${LIBS}
 
 .POSIX:
 
-SRC = src/st.c src/x.c src/boxdraw.c
+SRC = src/st.c src/x.c src/boxdraw.c src/hb.c
 OBJ = ${SRC:.c=.o}
+
+src/x.o: src/arg.h src/config.h src/st.h src/win.h src/hb.h
+src/hb.o: src/st.h
 
 all: st
 

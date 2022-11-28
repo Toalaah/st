@@ -37,6 +37,7 @@ fork. The original repo can be found <a href="https://git.suckless.org/st">here<
 - [boxdraw](https://st.suckless.org/patches/boxdraw/)
 - [clipboard](https://st.suckless.org/patches/clipboard/)
 - [scrollback](https://st.suckless.org/patches/scrollback/)
+- [ligatures](https://st.suckless.org/patches/ligatures/)
 
 ## License
 
