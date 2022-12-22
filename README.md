@@ -39,6 +39,7 @@ fork. The original repo can be found <a href="https://git.suckless.org/st">here<
 - [scrollback](https://st.suckless.org/patches/scrollback/)
 - [ligatures](https://st.suckless.org/patches/ligatures/)
 - [glyph-wide-support](https://st.suckless.org/patches/glyph_wide_support/)
+- [font2](https://st.suckless.org/patches/font2/)
 
 ## License
 
