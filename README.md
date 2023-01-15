@@ -1,7 +1,7 @@
 <h2 align="center"><i>ST – Simple Terminal</i></h2>
 
 <p align="center">
-<img src="https://img.shields.io/github/workflow/status/toalaah/st/Build?color=pink&logo=github&style=for-the-badge"
+<img src="https://img.shields.io/github/actions/workflow/status/toalaah/st/build.yml?branch=master&Build?color=pink&logo=github&style=for-the-badge"
      alt="build status" />
 <img src="https://img.shields.io/github/license/toalaah/st?color=add8e6&style=for-the-badge"
      alt="build status" />
