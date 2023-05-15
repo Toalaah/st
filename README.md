@@ -22,7 +22,7 @@ fork. The original repo can be found <a href="https://git.suckless.org/st">here<
 
    ```bash
    git clone git@github.com:Toalaah/st.git
-   cd st
+   cd st/src
    make
    sudo make install
    ```
