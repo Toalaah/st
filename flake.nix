@@ -1,43 +1,34 @@
 {
-  description = "Custom ST build";
+  inputs.nixpkgs.url = "github:nixos/nixpkgs";
+  inputs.flake-utils.url = "github:numtide/flake-utils";
+  inputs.treefmt-nix.url = "github:numtide/treefmt-nix";
 
-  inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    flake-utils.url = "github:numtide/flake-utils";
-  };
-
-  outputs = { self, nixpkgs, flake-utils }:
-    flake-utils.lib.eachDefaultSystem (system:
-      let
-        pkgs = nixpkgs.legacyPackages.${system};
-        lib = pkgs.lib;
-      in rec {
-        formatter = pkgs.nixpkgs-fmt;
-        packages.st =
-          pkgs.stdenv.mkDerivation rec {
-            name = "st";
-            src = self;
-            buildInputs = with pkgs; [
-              xorg.libX11
-              xorg.libXft
-              pkg-config
-              harfbuzz
-            ];
-            buildPhase = "make all";
-            installPhase = ''
-              mkdir -p $out/bin
-              install ./${name} $out/bin/${name}
-            '';
-            meta = with lib; {
-              homepage = "https://github.com/toalaah/st";
-              description = "Custom ST build";
-              license = licenses.mit;
-              maintainers = with maintainers; [ toalaah ];
-              platforms = platforms.unix;
-            };
-          };
-        defaultPackage = packages.st;
-        devShell = import ./shell.nix { inherit pkgs; };
+  outputs = {
+    self,
+    nixpkgs,
+    flake-utils,
+    treefmt-nix,
+  }:
+    flake-utils.lib.eachDefaultSystem (
+      system: let
+        pkgs = import nixpkgs {
+          inherit system;
+          config = {};
+          overlays = [];
+        };
+        inherit (pkgs) lib;
+      in {
+        packages.st = pkgs.st.overrideAttrs (prev: {
+          src = lib.cleanSource ./.;
+          extraLibs = [];
+        });
+        defaultPackage = self.packages.${system}.st;
+        devShell = import ./shell.nix {inherit pkgs;};
+        formatter = treefmt-nix.lib.mkWrapper pkgs {
+          projectRootFile = "flake.nix";
+          programs.alejandra.enable = true;
+          #programs.clang-format.enable = true;
+        };
       }
     );
 }

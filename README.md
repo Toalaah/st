@@ -5,7 +5,7 @@
 nix build
 
 # Other Unix-like system
-# Consult dependencies in ./shell.nix
+# Consult ./shell.nix for dependencies
 make
 ```
 
