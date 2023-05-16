@@ -95,6 +95,7 @@ unsigned int tabspaces = 8;
 
 /* bg opacity */
 float alpha = 0.8;
+float alphaUnfocused = 0.75;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
@@ -136,6 +137,8 @@ unsigned int defaultfg = 258;
 unsigned int defaultbg = 259;
 unsigned int defaultcs = 256;
 static unsigned int defaultrcs = 257;
+unsigned int bg = 259;
+unsigned int bgUnfocused = 259;
 
 /*
  * Default shape of cursor

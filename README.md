@@ -12,6 +12,7 @@ make
 ### Applied Patches:
 
 - [alpha](https://st.suckless.org/patches/alpha/)
+- [alpha-focus-highlight](https://st.suckless.org/patches/alpha_focus_highlight/)
 
 ### License
 
