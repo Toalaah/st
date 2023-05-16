@@ -1,15 +1,13 @@
-{ pkgs ? import <nixpkgs> { } }:
+{pkgs ? import <nixpkgs> {}}:
 with pkgs;
-mkShell {
-  buildInputs = [
-    nixpkgs-fmt
-    xorg.libX11
-    xorg.libXft
-    pkg-config
-    harfbuzz
-  ];
-
-  shellHook = ''
-    # ...
-  '';
-}
+  mkShell {
+    nativeBuildInputs = [
+      fontconfig
+      freetype
+      gnumake
+      ncurses
+      pkg-config
+      xorg.libX11
+      xorg.libXft
+    ];
+  }
