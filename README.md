@@ -14,6 +14,7 @@ make
 - [alpha](https://st.suckless.org/patches/alpha/)
 - [alpha-focus-highlight](https://st.suckless.org/patches/alpha_focus_highlight/)
 - [anysize](https://st.suckless.org/patches/anysize/)
+- [desktop-entry](https://st.suckless.org/patches/desktopentry/)
 
 ### License
 
