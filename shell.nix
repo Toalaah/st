@@ -1,7 +1,7 @@
 {pkgs ? import <nixpkgs> {}}:
 with pkgs;
   mkShell {
-    buildInputs = [
+    nativeBuildInputs = [
       fontconfig
       freetype
       gnumake
